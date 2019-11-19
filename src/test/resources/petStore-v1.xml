@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans>
+    <bean id="petstore" class="com.cmgy.service.PetStoreService">
+            <property name="chenDao" ref="chenDao"/>
+            <property name="haoDao" ref="haoDao"/>
+            <property name="owner" value="chenhao"/>
+    </bean>
+    <bean id="petSellService" class="com.cmgy.service.PetSellService" scope="prototype" />
+    <bean id="haoDao" class="com.cmgy.service.HaoDao"/>
+    <bean id="chenDao" class="com.cmgy.service.ChenDao" />
+</beans>
